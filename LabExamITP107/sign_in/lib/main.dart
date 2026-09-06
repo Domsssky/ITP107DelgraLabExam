@@ -109,7 +109,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   padding: const EdgeInsets.all(20),
                   child: Column(
                     children: [
-                      // WIDGET #9: TextField - user input fields.
+
                       TextField(
                         controller: _nameController,
                         style: TextStyle(
@@ -140,7 +140,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         ),
                         decoration: _inputDecoration(
                           label: 'Password',
-                          icon: Icons.email_outlined,
+                          icon: Icons.lock_outlined,
                         ).copyWith(
                           suffixIcon: IconButton(
                             icon: Icon(
@@ -279,7 +279,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
   }
 
   void _handleSingleTap() {
-    // ignore: avoid_print
     print('Hello World!');
     setState(() {
       _lastAction = 'Single Tap detected!';
@@ -300,7 +299,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
 
   void _handleLongPress() {
-    // ignore: avoid_print
     print('Full Name: DELGRA, MARK DOMINIC N.');
     setState(() {
       _lastAction = 'Long Press detected!';
